@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pedro.supercalc.MatrixActivity">
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/sumSwt"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/sumTv"
+        android:text="+"
+        android:textSize="50sp"
+        android:layout_below="@+id/sumSwt"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/m1d"
+        android:layout_centerInParent="true"
+        android:layout_alignParentStart="true"
+        android:textSize="30sp"
+        android:layout_width="50sp"
+        android:layout_height="50sp" />
+    <EditText
+        android:id="@+id/m1e"
+        android:layout_centerInParent="true"
+        android:layout_toEndOf="@+id/m1d"
+        android:textSize="30sp"
+        android:layout_width="50sp"
+        android:layout_height="50sp" />
+    <EditText
+        android:id="@+id/m1f"
+        android:layout_centerInParent="true"
+        android:layout_toEndOf="@+id/m1e"
+        android:textSize="30sp"
+        android:layout_width="50sp"
+        android:layout_height="50sp" />
+
+    <EditText
+        android:id="@+id/m1a"
+        android:layout_above="@+id/m1d"
+        android:layout_width="50sp"
+        android:layout_height="50sp" />
+    <EditText
+        android:layout_toEndOf="@+id/m1a"
+        android:layout_above="@+id/m1e"
+        android:id="@+id/m1b"
+        android:layout_width="50sp"
+        android:layout_height="50sp" />
+    <EditText
+        android:layout_above="@+id/m1f"
+        android:layout_toEndOf="@+id/m1b"
+        android:id="@+id/m1c"
+        android:layout_width="50sp"
+        android:layout_height="50sp" />
+
+    <EditText
+        android:id="@+id/m1g"
+        android:layout_below="@+id/m1d"
+        android:layout_width="50sp"
+        android:layout_height="50sp" />
+    <EditText
+        android:layout_below="@+id/m1e"
+        android:layout_toEndOf="@+id/m1g"
+        android:id="@+id/m1h"
+        android:layout_width="50sp"
+        android:layout_height="50sp" />
+    <EditText
+        android:layout_below="@+id/m1f"
+        android:layout_toEndOf="@+id/m1h"
+        android:id="@+id/m1i"
+        android:layout_width="50sp"
+        android:layout_height="50sp" />
+
+    <EditText
+        android:id="@+id/m2f"
+        android:layout_centerInParent="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="30sp"
+        android:layout_width="50sp"
+        android:layout_height="50sp" />
+    <EditText
+        android:id="@+id/m2e"
+        android:layout_centerInParent="true"
+        android:layout_toStartOf="@+id/m2f"
+        android:textSize="30sp"
+        android:layout_width="50sp"
+        android:layout_height="50sp" />
+    <EditText
+        android:id="@+id/m2d"
+        android:layout_centerInParent="true"
+        android:layout_toStartOf="@+id/m2e"
+        android:textSize="30sp"
+        android:layout_width="50sp"
+        android:layout_height="50sp" />
+
+    <EditText
+        android:id="@+id/m2c"
+        android:layout_above="@+id/m2f"
+        android:layout_toEndOf="@+id/m2e"
+        android:textSize="30sp"
+        android:layout_width="50sp"
+        android:layout_height="50sp" />
+    <EditText
+        android:id="@+id/m2b"
+        android:layout_toStartOf="@+id/m2c"
+        android:layout_above="@id/m2e"
+        android:textSize="30sp"
+        android:layout_width="50sp"
+        android:layout_height="50sp" />
+    <EditText
+        android:id="@+id/m2a"
+        android:layout_toStartOf="@+id/m2b"
+        android:layout_above="@+id/m2d"
+        android:textSize="30sp"
+        android:layout_width="50sp"
+        android:layout_height="50sp" />
+
+    <EditText
+        android:id="@+id/m2g"
+        android:layout_below="@+id/m2d"
+        android:layout_toStartOf="@+id/m2e"
+        android:textSize="30sp"
+        android:layout_width="50sp"
+        android:layout_height="50sp" />
+    <EditText
+        android:id="@+id/m2h"
+        android:layout_toEndOf="@+id/m2g"
+        android:layout_below="@+id/m2e"
+        android:textSize="30sp"
+        android:layout_width="50sp"
+        android:layout_height="50sp" />
+    <EditText
+        android:id="@+id/m2i"
+        android:layout_toEndOf="@+id/m2h"
+        android:layout_below="@+id/m2f"
+        android:textSize="30sp"
+        android:layout_width="50sp"
+        android:layout_height="50sp" />
+
+    <Button
+        android:id="@+id/resultBtn"
+        android:text="Show Result"
+        android:layout_marginTop="50dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/m1i"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+
+</RelativeLayout>

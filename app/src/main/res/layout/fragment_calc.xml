@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pedro.supercalc.CalcFragment">
+
+    <TextView
+        android:id="@+id/inputTv"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_horizontal"
+        android:textSize="45sp"
+        />
+
+    <LinearLayout
+        android:id="@+id/firstLl"
+        android:layout_below="@id/inputTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/sevenBtn"
+            android:text="7"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/eightBtn"
+            android:text="8"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/nineBtn"
+            android:text="9"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/divBtn"
+            android:text="/"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondLl"
+        android:layout_below="@+id/firstLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+        <Button
+            android:id="@+id/fourBtn"
+            android:text="4"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/fiveBtn"
+            android:text="5"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/sixBtn"
+            android:text="6"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/multBtn"
+            android:text="*"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/thirdLl"
+        android:layout_below="@id/secondLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/oneBtn"
+            android:text="1"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/twoBtn"
+            android:text="2"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/threeBtn"
+            android:text="3"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/plusBtn"
+            android:text="+"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/thirdLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/zeroBtn"
+            android:text="0"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp" />
+        <Button
+            android:id="@+id/equalBtn"
+            android:text="="
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="2"/>
+        <Button
+            android:id="@+id/subsBtn"
+            android:text="-"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</RelativeLayout>
