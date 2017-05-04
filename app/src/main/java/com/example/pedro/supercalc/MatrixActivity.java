@@ -38,13 +38,11 @@ public class MatrixActivity extends AppCompatActivity {
                 b = 0;
                 if (!Objects.equals(mat1Et[i][j].getText().toString(), ""))
                 {
-                    Log.d("jasnkd", String.valueOf(mat1Et[i][j].getText()));
                     a = Integer.parseInt(mat1Et[i][j].getText().toString());
 
                 }
                 if (!Objects.equals(mat2Et[i][j].getText().toString(), ""))
                 {
-                    Log.d("jasnkd", String.valueOf(mat2Et[i][j].getText()));
 
                     b = Integer.parseInt(mat2Et[i][j].getText().toString());
 
