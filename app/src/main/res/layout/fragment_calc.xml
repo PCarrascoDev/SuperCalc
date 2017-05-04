@@ -25,26 +25,26 @@
 
         <Button
             android:id="@+id/sevenBtn"
-            android:text="7"
+            android:text="@string/_7"
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_weight="1"
             />
         <Button
             android:id="@+id/eightBtn"
-            android:text="8"
+            android:text="@string/_8"
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_weight="1"/>
         <Button
             android:id="@+id/nineBtn"
-            android:text="9"
+            android:text="@string/_9"
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_weight="1"/>
         <Button
             android:id="@+id/divBtn"
-            android:text="/"
+            android:text="@string/_div"
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_weight="1"/>
@@ -60,25 +60,25 @@
         android:weightSum="4">
         <Button
             android:id="@+id/fourBtn"
-            android:text="4"
+            android:text="@string/_4"
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_weight="1"/>
         <Button
             android:id="@+id/fiveBtn"
-            android:text="5"
+            android:text="@string/_5"
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_weight="1"/>
         <Button
             android:id="@+id/sixBtn"
-            android:text="6"
+            android:text="@string/_6"
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_weight="1"/>
         <Button
             android:id="@+id/multBtn"
-            android:text="*"
+            android:text="@string/_mult"
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_weight="1"/>
@@ -94,25 +94,25 @@
 
         <Button
             android:id="@+id/oneBtn"
-            android:text="1"
+            android:text="@string/_1"
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_weight="1"/>
         <Button
             android:id="@+id/twoBtn"
-            android:text="2"
+            android:text="@string/_2"
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_weight="1"/>
         <Button
             android:id="@+id/threeBtn"
-            android:text="3"
+            android:text="@string/_3"
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_weight="1"/>
         <Button
             android:id="@+id/plusBtn"
-            android:text="+"
+            android:text="@string/_plus"
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_weight="1"/>
@@ -128,19 +128,19 @@
 
         <Button
             android:id="@+id/zeroBtn"
-            android:text="0"
+            android:text="@string/_0"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="60dp" />
         <Button
             android:id="@+id/equalBtn"
-            android:text="="
+            android:text="@string/_equal"
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_weight="2"/>
         <Button
             android:id="@+id/subsBtn"
-            android:text="-"
+            android:text="@string/_subs"
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_weight="1"/>

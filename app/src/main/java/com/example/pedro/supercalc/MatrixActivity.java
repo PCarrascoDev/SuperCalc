@@ -20,6 +20,13 @@ import java.util.Objects;
 
 public class MatrixActivity extends AppCompatActivity {
 
+    public static final String ADDITION_ENABLED = "Addition enabled";
+    public static final String SUBTRACTION_ENABLED = "Subtraction enabled";
+    public static final String OK = "OK";
+    public static final String RESULT = "Result: ";
+    public static final String RESULT1 = "Result";
+    public static final String B = "B";
+    public static final String A = "A";
     private EditText mat1Et[][] = new EditText[3][3];
     private EditText mat2Et[][] = new EditText[3][3];
     private Integer matC[][] = new Integer[3][3];
@@ -48,8 +55,8 @@ public class MatrixActivity extends AppCompatActivity {
                     b = Integer.parseInt(mat2Et[i][j].getText().toString());
 
                 }
-                Log.d("A", String.valueOf(a));
-                Log.d("B", String.valueOf(b));
+                Log.d(A, String.valueOf(a));
+                Log.d(B, String.valueOf(b));
                 if (sum)
                 {
                     matC[i][j] = a + b;
@@ -83,8 +90,6 @@ public class MatrixActivity extends AppCompatActivity {
 
         //Setting up Matrix B
 
-
-
         for (int i = 0, k = 0; i < 3; i++)
         {
             for (int j = 0; j < 3; j++)
@@ -104,12 +109,12 @@ public class MatrixActivity extends AppCompatActivity {
                 String resultA = "(" + matC[0][0] + ")" + "(" + String.valueOf(matC[0][1]) + ")" + "(" + matC[0][2] + ")";
                 String resultB = "(" + matC[1][0] + ")" + "(" + String.valueOf(matC[1][1]) + ")" + "(" + matC[1][2] + ")";
                 String resultC = "(" + matC[2][0] + ")" + "(" + String.valueOf(matC[2][1]) + ")" + "(" + matC[2][2] + ")";
-                Log.d("Result", resultA + resultB + resultC);
+                Log.d(RESULT1, resultA + resultB + resultC);
 
                 AlertDialog dialog = new AlertDialog.Builder(new ContextThemeWrapper(MatrixActivity.this, R.style.myDialog)).create();
-                dialog.setTitle("Result: ");
+                dialog.setTitle(RESULT);
                 dialog.setMessage(resultA + "\n" + resultB + "\n" + resultC);
-                dialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK", new DialogInterface.OnClickListener() {
+                dialog.setButton(AlertDialog.BUTTON_NEUTRAL, OK, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
@@ -128,14 +133,14 @@ public class MatrixActivity extends AppCompatActivity {
                 {
                     sumTv.setText("-");
                     sum = false;
-                    Toast toast = Toast.makeText(MatrixActivity.this, "Subtraction enabled", Toast.LENGTH_SHORT);
+                    Toast toast = Toast.makeText(MatrixActivity.this, SUBTRACTION_ENABLED, Toast.LENGTH_SHORT);
                     toast.show();
                 }
                 else
                 {
                     sumTv.setText("+");
                     sum = true;
-                    Toast toast = Toast.makeText(MatrixActivity.this, "Addition enabled", Toast.LENGTH_SHORT);
+                    Toast toast = Toast.makeText(MatrixActivity.this, ADDITION_ENABLED, Toast.LENGTH_SHORT);
                     toast.show();
 
                 }

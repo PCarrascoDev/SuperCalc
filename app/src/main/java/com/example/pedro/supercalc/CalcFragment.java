@@ -25,6 +25,7 @@ import java.util.Stack;
  */
 public class CalcFragment extends Fragment {
 
+    public static final String NA_N = "NaN";
     private boolean isResult = false;
 
     public CalcFragment() {
@@ -238,7 +239,7 @@ public class CalcFragment extends Fragment {
         equalBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!Objects.equals(String.valueOf(output.getText()), "") && !Objects.equals(String.valueOf(output.getText()), "NaN") && output.getText() != null)
+                if (!Objects.equals(String.valueOf(output.getText()), "") && !Objects.equals(String.valueOf(output.getText()), NA_N) && output.getText() != null)
                 {
                     calculation.pushValue(Float.parseFloat(String.valueOf(output.getText())));
                 }

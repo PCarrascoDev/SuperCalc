@@ -10,6 +10,8 @@ import android.support.v4.app.FragmentPagerAdapter;
  */
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
+    public static final String SUPER_CALCULATOR = "Super Calculator";
+
     public SectionsPagerAdapter(FragmentManager fm) {
         super(fm);
     }
@@ -36,7 +38,7 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         switch (position) {
             case 0:
-                return "Super Calculator";
+                return SUPER_CALCULATOR;
         }
         return null;
     }

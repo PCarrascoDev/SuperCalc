@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:maxLines="1"
-        android:text="Matrix Calculator"
+        android:text="@string/matrix_calculator"
         android:textAlignment="center"
         android:textSize="40sp" />
 
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/sumSwt"
         android:layout_centerHorizontal="true"
-        android:text="+"
+        android:text="@string/_sum"
         android:textSize="50sp" />
 
     <EditText
@@ -215,7 +215,7 @@
         android:layout_below="@+id/m1i"
         android:layout_centerInParent="true"
         android:layout_marginTop="50dp"
-        android:text="Show Result" />
+        android:text="@string/show_result" />
 
 
 </RelativeLayout>
