@@ -15,6 +15,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.LinkedList;
+import java.util.Objects;
 import java.util.Queue;
 import java.util.Stack;
 
@@ -185,7 +186,7 @@ public class CalcFragment extends Fragment {
         divBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(output.getText() != "")
+                if(!Objects.equals(String.valueOf(output.getText()), ""))
                 {
                     calculation.pushValue(Float.parseFloat(String.valueOf(output.getText())));
                     calculation.pushOperation('/');
@@ -197,7 +198,7 @@ public class CalcFragment extends Fragment {
         multBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (output.getText() != "")
+                if (!Objects.equals(String.valueOf(output.getText()), ""))
                 {
                     calculation.pushValue(Float.parseFloat(String.valueOf(output.getText())));
                     calculation.pushOperation('*');
@@ -210,7 +211,7 @@ public class CalcFragment extends Fragment {
         plusBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (output.getText() != "")
+                if (!Objects.equals(String.valueOf(output.getText()), ""))
                 {
                     calculation.pushValue(Float.parseFloat(String.valueOf(output.getText())));
                     calculation.pushOperation('+');
@@ -223,7 +224,7 @@ public class CalcFragment extends Fragment {
         subsBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (output.getText() != "")
+                if (!Objects.equals(String.valueOf(output.getText()), ""))
                 {
                     calculation.pushValue(Float.parseFloat(String.valueOf(output.getText())));
                     calculation.pushOperation('-');
@@ -237,7 +238,7 @@ public class CalcFragment extends Fragment {
         equalBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (output.getText() != "" && output.getText() != "NaN" && output.getText() != null)
+                if (!Objects.equals(String.valueOf(output.getText()), "") && !Objects.equals(String.valueOf(output.getText()), "NaN") && output.getText() != null)
                 {
                     calculation.pushValue(Float.parseFloat(String.valueOf(output.getText())));
                 }

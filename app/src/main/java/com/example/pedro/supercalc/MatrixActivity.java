@@ -14,6 +14,7 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Objects;
 
@@ -100,9 +101,9 @@ public class MatrixActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 setMatC();
-                String resultA = matC[0][0] + String.valueOf(matC[0][1]) + matC[0][2];
-                String resultB = matC[1][0] + String.valueOf(matC[1][1]) + matC[1][2];
-                String resultC = matC[2][0] + String.valueOf(matC[2][1]) + matC[2][2];
+                String resultA = "(" + matC[0][0] + ")" + "(" + String.valueOf(matC[0][1]) + ")" + "(" + matC[0][2] + ")";
+                String resultB = "(" + matC[1][0] + ")" + "(" + String.valueOf(matC[1][1]) + ")" + "(" + matC[1][2] + ")";
+                String resultC = "(" + matC[2][0] + ")" + "(" + String.valueOf(matC[2][1]) + ")" + "(" + matC[2][2] + ")";
                 Log.d("Result", resultA + resultB + resultC);
 
                 AlertDialog dialog = new AlertDialog.Builder(new ContextThemeWrapper(MatrixActivity.this, R.style.myDialog)).create();
@@ -127,11 +128,16 @@ public class MatrixActivity extends AppCompatActivity {
                 {
                     sumTv.setText("-");
                     sum = false;
+                    Toast toast = Toast.makeText(MatrixActivity.this, "Subtraction enabled", Toast.LENGTH_SHORT);
+                    toast.show();
                 }
                 else
                 {
                     sumTv.setText("+");
                     sum = true;
+                    Toast toast = Toast.makeText(MatrixActivity.this, "Addition enabled", Toast.LENGTH_SHORT);
+                    toast.show();
+
                 }
             }
         });

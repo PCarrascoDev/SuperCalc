@@ -5,12 +5,15 @@
     tools:context="com.example.pedro.supercalc.CalcFragment">
 
     <TextView
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
         android:id="@+id/inputTv"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:gravity="center_horizontal"
         android:textSize="45sp"
         />
+
 
     <LinearLayout
         android:id="@+id/firstLl"
