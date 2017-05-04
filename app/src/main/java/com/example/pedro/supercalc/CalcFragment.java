@@ -187,7 +187,7 @@ public class CalcFragment extends Fragment {
             public void onClick(View v) {
                 if(output.getText() != "")
                 {
-                    calculation.pushValue(Float.parseFloat((String)output.getText()));
+                    calculation.pushValue(Float.parseFloat(String.valueOf(output.getText())));
                     calculation.pushOperation('/');
                     output.setText("");
                 }
@@ -199,7 +199,7 @@ public class CalcFragment extends Fragment {
             public void onClick(View v) {
                 if (output.getText() != "")
                 {
-                    calculation.pushValue(Float.parseFloat((String) output.getText()));
+                    calculation.pushValue(Float.parseFloat(String.valueOf(output.getText())));
                     calculation.pushOperation('*');
                     output.setText("");
                 }
@@ -212,7 +212,7 @@ public class CalcFragment extends Fragment {
             public void onClick(View v) {
                 if (output.getText() != "")
                 {
-                    calculation.pushValue(Float.parseFloat((String) output.getText()));
+                    calculation.pushValue(Float.parseFloat(String.valueOf(output.getText())));
                     calculation.pushOperation('+');
                     output.setText("");
                 }
@@ -225,7 +225,7 @@ public class CalcFragment extends Fragment {
             public void onClick(View v) {
                 if (output.getText() != "")
                 {
-                    calculation.pushValue(Float.parseFloat((String) output.getText()));
+                    calculation.pushValue(Float.parseFloat(String.valueOf(output.getText())));
                     calculation.pushOperation('-');
                     output.setText("");
                 }
@@ -239,7 +239,7 @@ public class CalcFragment extends Fragment {
             public void onClick(View v) {
                 if (output.getText() != "" && output.getText() != "NaN" && output.getText() != null)
                 {
-                    calculation.pushValue(Float.parseFloat((String) output.getText()));
+                    calculation.pushValue(Float.parseFloat(String.valueOf(output.getText())));
                 }
                 else
                 {
